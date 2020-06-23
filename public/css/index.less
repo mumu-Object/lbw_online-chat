@@ -1,0 +1,142 @@
+body {
+  background-color: #ccc;
+}
+
+.container-fluid {
+  padding: 0;
+
+  .row {
+    margin: 0;
+  }
+
+  .col-lg-12 {
+    padding: 0;
+  }
+
+  .header {
+    height: 50px;
+    background-color: #f7f6fb;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    position: relative;
+
+    i {
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      transform: translateY(-50%);
+      transition: all 0.4s;
+      cursor: pointer;
+    }
+
+    i:hover {
+      color: skyblue;
+    }
+  }
+
+  .inputbox {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    input {
+      font-size: 20px;
+    }
+
+    bottom {
+      outline: none;
+    }
+
+    .h100 {
+      height: 100%;
+    }
+  }
+}
+
+.chatbox {
+  padding-bottom: 60px;
+}
+
+.avatarColor {
+  width: 45px;
+  height: 45px;
+  background-color: skyblue;
+  margin: 0 20px 20px 0;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  user-select: none;
+}
+
+.form {
+  padding: 15px;
+
+  .avatarColor {
+    float: left;
+  }
+
+  .message {
+    width: auto;
+    display: inline-block;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    background-color: #e4e4e4;
+    font-size: 18px;
+    word-break: break-all;
+  }
+}
+
+.to {
+  padding: 15px;
+  text-align: right;
+
+  .avatarColor {
+    float: right;
+    margin: 0 0 20px 20px;
+  }
+
+  .message {
+    width: auto;
+    display: inline-block;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 10px;
+    background-color: #4592e2;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: left;
+    word-break: break-all;
+  }
+}
+
+.dd {
+  height: 60px;
+}
+
+.message {
+  max-width: 200px;
+}
+
+.notice {
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  color: #ccc;
+}
+
+.alert {
+  position: fixed;
+  top: -52px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
